@@ -181,6 +181,12 @@ function teamSection(data,locale){
  const guideTitle=locale==='en'?'Local guides':locale==='pt-BR'?'Guias e condutores locais':locale==='fr'?'Guides locaux':'Guías locales';
  return `<div class="grid project-team"><article class="team-person"><img class="team-avatar" src="/assets/images/team/renata.webp" width="640" height="763" alt="Renata Alberigi" loading="lazy" decoding="async"><p class="eyebrow">Renata Alberigi</p><p>${e(l(p.sections.team.renata,locale))}</p><a class="control" href="${e(renataUrl)}">${e(u.mainPortfolio)} ↗</a></article><article class="team-person"><img class="team-avatar" src="/assets/images/team/axel.webp" width="640" height="640" alt="Axel Alberigi · A.X.L." loading="lazy" decoding="async"><p class="eyebrow">Axel Alberigi · A.X.L.</p><p>${e(l(p.sections.team.axel,locale))}</p><a class="control" href="https://axl.sssom.com/">${e(u.axlSite)} ↗</a></article><article><p class="eyebrow">${e(guideTitle)}</p><p>${e(l(p.sections.team.guides,locale))}</p></article></div>`;
 }
+function schoolLetter(data,locale){
+ const p=data.project.sections.school;
+ const full='/assets/images/documents/carta-anuencia-institucional-aguas-de-dentro.jpeg';
+ const preview='/assets/images/documents/carta-anuencia-institucional-aguas-de-dentro.webp';
+ return `<div class="project-subheading school-letter-heading"><h3>${e(l(p.letterTitle,locale))}</h3><p class="project-note">${e(l(p.letterBody,locale))}</p></div><figure class="school-letter"><a href="${full}" target="_blank" rel="noopener"><img src="${preview}" width="1136" height="1600" alt="${e(l(p.letterTitle,locale))}" loading="lazy" decoding="async"></a><figcaption><a class="control" href="${full}" target="_blank" rel="noopener">${e(l(p.letterAction,locale))} &#8599;</a></figcaption></figure>`;
+}
 function homeMain(data,locale){
  const p=data.project,u=data.dictionaries[locale], fieldCollections=data.collections.filter(c=>c.type==='field'), archives=data.collections.filter(c=>c.type==='archive');
  const hero=`<section class="grid hero" aria-labelledby="name"><div class="hero-copy"><p class="eyebrow">${e(l(p.role,locale))}</p><h1 id="name">${e(l(p.title,locale))}</h1><p class="intro">${e(l(p.intro,locale))}</p><p class="meta">${e(l(p.location,locale))}</p><div class="hero-actions"><a class="control primary" href="#research">${e(u.research)} <span aria-hidden="true">↓</span></a><a class="control" href="#routes">${e(u.routes)}</a></div></div><figure class="project-hero-media">${picture(data,locale,data.media.processSeries[0].field,`${l(p.title,locale)} — ${u.record}.`,true)}</figure></section>`;
@@ -191,7 +197,7 @@ function homeMain(data,locale){
  const routes=sectionStart('routes','05',u.routes,l(p.sections.routes.title,locale),l(p.sections.routes.body,locale))+routeCards(data,locale)+references(locale)+`</section>`;
  const paints=sectionStart('paintings','06',u.paintings,l(p.sections.paintings.title,locale),l(p.sections.paintings.body,locale))+proposedWorks(data,locale)+`</section>`;
  const film=sectionStart('film','07',u.film,l(p.sections.film.title,locale))+filmSection(data,locale)+`</section>`;
- const school=sectionStart('school','08',u.school,l(p.sections.school.title,locale),l(p.sections.school.body,locale))+`<div class="project-subheading"><h3>${e(l(p.sections.exhibitions.title,locale))}</h3><p class="project-note">${e(l(p.sections.exhibitions.body,locale))}</p></div><ul class="gallery grid">${archives.map(c=>collectionCard(data,locale,c)).join('')}</ul></section>`;
+ const school=sectionStart('school','08',u.school,l(p.sections.school.title,locale),l(p.sections.school.body,locale))+schoolLetter(data,locale)+`<div class="project-subheading"><h3>${e(l(p.sections.exhibitions.title,locale))}</h3><p class="project-note">${e(l(p.sections.exhibitions.body,locale))}</p></div><ul class="gallery grid">${archives.map(c=>collectionCard(data,locale,c)).join('')}</ul></section>`;
  const team=sectionStart('team','09',u.team,l(p.sections.team.title,locale))+teamSection(data,locale)+`</section>`;
  return hero+project+research+color+sound+routes+paints+film+school+team;
 }
