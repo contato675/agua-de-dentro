@@ -21,7 +21,7 @@ npm run verify
 
 `npm run build` writes `dist/`. `npm run check` validates the four locale routes, all collection pages, image references, CSP, gallery counts and the five-year wording.
 
-The project website is intended for `aguadedentro.renataalberigi.com.br`. The site remains `noindex,follow` while it functions as proposal/research material.
+The project website is intended for `aguasdedentro.renataalberigi.com.br`. The site remains `noindex,follow` while it functions as proposal/research material.
 
 ## Main routes
 

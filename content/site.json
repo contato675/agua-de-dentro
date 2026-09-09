@@ -1,5 +1,5 @@
 {
-  "origin": "https://aguadedentro.renataalberigi.com.br",
+  "origin": "https://aguasdedentro.renataalberigi.com.br",
   "defaultLocale": "es",
   "locales": [
     "es",
@@ -13,7 +13,7 @@
     "fr": "fr/",
     "en": "en/"
   },
-  "customDomain": "aguadedentro.renataalberigi.com.br",
+  "customDomain": "aguasdedentro.renataalberigi.com.br",
   "robots": "noindex,follow",
   "projectSiteYears": 5
 }
