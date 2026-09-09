@@ -57,3 +57,29 @@
 @media (min-width:1024px) {
   .film-reference { grid-column: span 4; }
 }
+/* Stable compact media presentation; prevents gallery primitives or stale sizing from expanding these assets. */
+.film-references { max-width: 960px; }
+.film-reference { align-self: start; overflow: hidden; }
+.film-reference > a { width: 100%; }
+.film-reference > a > img {
+  display: block !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  height: auto !important;
+  aspect-ratio: 16 / 9 !important;
+  object-fit: cover !important;
+  margin: 0 0 12px !important;
+}
+.project-team article.team-person > img.team-avatar {
+  display: block !important;
+  width: 64px !important;
+  min-width: 64px !important;
+  max-width: 64px !important;
+  height: 64px !important;
+  min-height: 64px !important;
+  max-height: 64px !important;
+  aspect-ratio: 1 / 1 !important;
+  object-fit: cover !important;
+  border-radius: 50% !important;
+  margin: 0 0 16px !important;
+}

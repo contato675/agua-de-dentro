@@ -1,11 +1,13 @@
 import {readFile,writeFile,mkdir,rm,cp,readdir} from 'node:fs/promises';
 import path from 'node:path';
 import {fileURLToPath} from 'node:url';
+import {createHash} from 'node:crypto';
 import {LOCALES,LOCALE_CONFIG,localized as l,localePath} from './i18n.mjs';
 
 const ROOT=fileURLToPath(new URL('../',import.meta.url));
 const CONTENT=path.join(ROOT,'content');
 const DIST=path.join(ROOT,'dist');
+let PROJECT_CSS_VERSION='1';
 const e=v=>String(v).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const readJson=async p=>JSON.parse(await readFile(p,'utf8'));
 const local=(locale,rel='')=>'/' + localePath(locale) + rel;
@@ -92,7 +94,7 @@ function alternates(data,route=''){
 }
 function document(data,locale,route,title,description,main){
  const u=data.dictionaries[locale], canonical=absolute(data.site,locale,route);
- return `<!doctype html><html lang="${e(locale)}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="robots" content="${e(data.site.robots)}"><meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'"><title>${e(title)}</title><meta name="description" content="${e(description)}"><meta property="og:title" content="${e(title)}"><meta property="og:description" content="${e(description)}"><meta property="og:url" content="${e(canonical)}"><meta property="og:type" content="website"><meta property="og:locale" content="${e(LOCALE_CONFIG[locale].og)}"><link rel="canonical" href="${e(canonical)}">${alternates(data,route)}<link rel="stylesheet" href="/assets/css/tokens.css"><link rel="stylesheet" href="/assets/css/scaffold.css"><link rel="stylesheet" href="/assets/css/gallery.css"><link rel="stylesheet" href="/assets/css/navigation.css"><link rel="stylesheet" href="/assets/css/brand.css"><link rel="stylesheet" href="/assets/css/project.css"><link rel="stylesheet" href="/assets/css/atlas-colors.css"><script src="/assets/js/locale-navigation.js" defer></script><script src="/assets/js/navigation.js" defer></script><script src="/assets/js/language-picker.js" defer></script></head><body><a class="skip" href="#content">${e(u.skip)}</a>${header(data,locale,route)}${drawer(data,locale,route)}<main id="content" class="wrap">${main}</main>${footer(data,locale)}</body></html>`;
+ return `<!doctype html><html lang="${e(locale)}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="robots" content="${e(data.site.robots)}"><meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'"><title>${e(title)}</title><meta name="description" content="${e(description)}"><meta property="og:title" content="${e(title)}"><meta property="og:description" content="${e(description)}"><meta property="og:url" content="${e(canonical)}"><meta property="og:type" content="website"><meta property="og:locale" content="${e(LOCALE_CONFIG[locale].og)}"><link rel="canonical" href="${e(canonical)}">${alternates(data,route)}<link rel="stylesheet" href="/assets/css/tokens.css"><link rel="stylesheet" href="/assets/css/scaffold.css"><link rel="stylesheet" href="/assets/css/gallery.css"><link rel="stylesheet" href="/assets/css/navigation.css"><link rel="stylesheet" href="/assets/css/brand.css"><link rel="stylesheet" href="/assets/css/project.css?v=${e(PROJECT_CSS_VERSION)}"><link rel="stylesheet" href="/assets/css/atlas-colors.css"><script src="/assets/js/locale-navigation.js" defer></script><script src="/assets/js/navigation.js" defer></script><script src="/assets/js/language-picker.js" defer></script></head><body><a class="skip" href="#content">${e(u.skip)}</a>${header(data,locale,route)}${drawer(data,locale,route)}<main id="content" class="wrap">${main}</main>${footer(data,locale)}</body></html>`;
 }
 const processLabels={
  en:['Field photograph','Sketchbook study','Painting'],
@@ -220,7 +222,8 @@ async function write(rel,content){
  const file=path.join(DIST,rel); await mkdir(path.dirname(file),{recursive:true}); await writeFile(file,content);
 }
 async function build(){
- const data=await load(); validate(data); await rm(DIST,{recursive:true,force:true}); await mkdir(DIST,{recursive:true});
+ const data=await load(); validate(data);
+ PROJECT_CSS_VERSION=createHash('sha256').update(await readFile(path.join(ROOT,'assets','css','project.css'))).digest('hex').slice(0,12); await rm(DIST,{recursive:true,force:true}); await mkdir(DIST,{recursive:true});
  await cp(path.join(ROOT,'assets'),path.join(DIST,'assets'),{recursive:true});
  await write('assets/css/atlas-colors.css',atlasCss(data));
  for(const locale of LOCALES){
