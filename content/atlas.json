@@ -1,0 +1,18 @@
+[
+  {"id":"stone","imageId":"stone-04","colors":["#463C3A","#6D6C68","#96928C","#AEABA5","#C7C0B7","#D7D6D0"],
+   "title":{"en":"Stone · mineral surface","pt-BR":"Pedra · superfície mineral","fr":"Pierre · surface minérale","es":"Piedra · superficie mineral"}},
+  {"id":"flower","imageId":"vegetation-11","colors":["#325B1A","#5B8732","#84AC63","#CFA1E0","#AA7EC2","#F8D339"],
+   "title":{"en":"Flower · green, lilac and yellow","pt-BR":"Flor · verdes, lilases e amarelo","fr":"Fleur · verts, lilas et jaune","es":"Flor · verdes, lilas y amarillo"}},
+  {"id":"amber-water","imageId":"water-05","colors":["#203A38","#5D3426","#8B4725","#C06D2D","#DEA13B","#F0C868"],
+   "title":{"en":"Water and rock · amber","pt-BR":"Água e rocha · âmbar","fr":"Eau et roche · ambre","es":"Agua y roca · ámbar"}},
+  {"id":"reflection","imageId":"water-07","colors":["#1A2D61","#304778","#5D654C","#9D572F","#C68B55","#B9D0E4"],
+   "title":{"en":"Water · reflection","pt-BR":"Água · reflexo","fr":"Eau · reflet","es":"Agua · reflejo"}},
+  {"id":"blue-cactus","imageId":"vegetation-09","colors":["#355548","#64795B","#8C9B77","#4C8D9A","#9A876F","#C4B5A0"],
+   "title":{"en":"Cactus · blue-green surface","pt-BR":"Cacto · superfície azul-esverdeada","fr":"Cactus · surface bleu-vert","es":"Cactus · superficie azul verdosa"}},
+  {"id":"lichen","imageId":"stone-06","colors":["#514448","#76575A","#8D9277","#B6C19D","#D7D9BF","#E5E2D0"],
+   "title":{"en":"Lichen and rock","pt-BR":"Líquen e rocha","fr":"Lichen et roche","es":"Liquen y roca"}},
+  {"id":"yellow-flower","imageId":"vegetation-08","colors":["#365A28","#6E963B","#98AF55","#D0A627","#F0D94B","#80633B"],
+   "title":{"en":"Flowering vegetation · yellow","pt-BR":"Vegetação em flor · amarelo","fr":"Végétation en fleur · jaune","es":"Vegetación en flor · amarillo"}},
+  {"id":"leaf-rock","imageId":"vegetation-03","colors":["#2F5C32","#5F8A52","#8DAA67","#51483D","#8B8173","#B7AD98"],
+   "title":{"en":"Leaf and rock","pt-BR":"Folha e rocha","fr":"Feuille et roche","es":"Hoja y roca"}}
+]

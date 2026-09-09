@@ -1,0 +1,77 @@
+{
+  "title": {"en":"Água de Dentro","pt-BR":"Água de Dentro","fr":"Água de Dentro","es":"Água de Dentro"},
+  "role": {
+    "en":"Artistic research · Chapada Diamantina, Bahia, Brazil",
+    "pt-BR":"Pesquisa artística · Chapada Diamantina, Bahia, Brasil",
+    "fr":"Recherche artistique · Chapada Diamantina, Bahia, Brésil",
+    "es":"Investigación artística · Chapada Diamantina, Bahia, Brasil"
+  },
+  "subtitle": {
+    "en":"Paintings, paths, colours and memories from Chapada Diamantina",
+    "pt-BR":"Pinturas, caminhos, cores e memórias da Chapada Diamantina",
+    "fr":"Peintures, chemins, couleurs et mémoires de la Chapada Diamantina",
+    "es":"Pinturas, caminos, colores y memorias de la Chapada Diamantina"
+  },
+  "location": {
+    "en":"Caeté-Açu · Chapada Diamantina · Bahia · Brazil",
+    "pt-BR":"Caeté-Açu · Chapada Diamantina · Bahia · Brasil",
+    "fr":"Caeté-Açu · Chapada Diamantina · Bahia · Brésil",
+    "es":"Caeté-Açu · Chapada Diamantina · Bahia · Brasil"
+  },
+  "intro": {
+    "en":"A project by Renata Alberigi. Site-specific artistic research with painting at its centre and a public archive of the process.",
+    "pt-BR":"Projeto de Renata Alberigi. Pesquisa artística situada, com a pintura no centro e um acervo público do processo.",
+    "fr":"Un projet de Renata Alberigi. Une recherche artistique située, centrée sur la peinture et accompagnée d’une archive publique du processus.",
+    "es":"Proyecto de Renata Alberigi. Investigación artística situada, con la pintura en el centro y un archivo público del proceso."
+  },
+  "question": {
+    "en":"How do waters and paths relate to ways of inhabiting, working and narrating Chapada Diamantina, Bahia, Brazil, and how does this research transform Renata’s gaze and painting?",
+    "pt-BR":"Como as águas e os caminhos se relacionam com modos de habitar, trabalhar e narrar a Chapada Diamantina, Bahia, Brasil, e como essa investigação transforma o olhar e a pintura de Renata?",
+    "fr":"Comment les eaux et les chemins se relient-ils aux manières d’habiter, de travailler et de raconter la Chapada Diamantina, dans l’État de Bahia au Brésil, et comment cette recherche transforme-t-elle le regard et la peinture de Renata ?",
+    "es":"¿Cómo se relacionan las aguas y los caminos con las formas de habitar, trabajar y narrar la Chapada Diamantina, Bahia, Brasil, y cómo transforma esta investigación la mirada y la pintura de Renata?"
+  },
+  "sections": {
+    "project": {
+      "title":{"en":"Research, creation and circulation","pt-BR":"Pesquisa, criação e circulação","fr":"Recherche, création et circulation","es":"Investigación, creación y circulación"},
+      "body":{"en":"Água de Dentro begins with the field research Renata already develops in Caeté-Açu and expands this method to other areas of Chapada Diamantina. Walking, photography, sketchbooks, historical research, conversations, colour palettes and soundscapes will feed a series of eight paintings.","pt-BR":"Água de Dentro parte da pesquisa de campo que Renata já desenvolve em Caeté-Açu e amplia esse método para outros núcleos da Chapada Diamantina. Caminhadas, fotografia, sketchbook, pesquisa histórica, conversas, paletas cromáticas e paisagens sonoras alimentarão uma série de oito pinturas.","fr":"Água de Dentro part de la recherche de terrain que Renata développe déjà à Caeté-Açu et étend cette méthode à d’autres territoires de la Chapada Diamantina. Marche, photographie, carnets de croquis, recherche historique, conversations, palettes chromatiques et paysages sonores nourriront une série de huit peintures.","es":"Água de Dentro parte de la investigación de campo que Renata ya desarrolla en Caeté-Açu y amplía este método a otros núcleos de la Chapada Diamantina. Caminatas, fotografía, cuadernos de bocetos, investigación histórica, conversaciones, paletas cromáticas y paisajes sonoros alimentarán una serie de ocho pinturas."}
+    },
+    "research": {
+      "title":{"en":"Previous field research in Caeté-Açu","pt-BR":"Pesquisa de campo anterior em Caeté-Açu","fr":"Recherche de terrain antérieure à Caeté-Açu","es":"Investigación de campo anterior en Caeté-Açu"},
+      "body":{"en":"The galleries bring together records made in Caeté-Açu, Chapada Diamantina, Bahia, Brazil. Water, rocks, paths and vegetation are observed as visual and sensory material rather than as a scientific survey.","pt-BR":"As galerias reúnem registros realizados em Caeté-Açu, Chapada Diamantina, Bahia, Brasil. Água, pedras, caminhos e vegetação são observados como matéria visual e sensorial, e não como levantamento científico.","fr":"Les galeries réunissent des documents réalisés à Caeté-Açu, dans la Chapada Diamantina, Bahia, Brésil. L’eau, les roches, les chemins et la végétation sont observés comme matière visuelle et sensorielle, et non comme inventaire scientifique.","es":"Las galerías reúnen registros realizados en Caeté-Açu, Chapada Diamantina, Bahia, Brasil. El agua, las piedras, los caminos y la vegetación se observan como materia visual y sensorial, no como un relevamiento científico."}
+    },
+    "routes": {
+      "title":{"en":"Three complementary research areas","pt-BR":"Três núcleos complementares de pesquisa","fr":"Trois territoires de recherche complémentaires","es":"Tres núcleos complementarios de investigación"},
+      "body":{"en":"The project connects the territory already lived and researched in Caeté-Açu with a seven-day immersion in Vale do Pati and a historical field axis through Mucugê and Igatu. Local guides or conductors will be sought according to each route.","pt-BR":"O projeto conecta o território já vivido e pesquisado em Caeté-Açu a uma imersão de sete dias no Vale do Pati e a um eixo histórico de campo em Mucugê e Igatu. Guias ou condutores locais serão buscados de acordo com cada rota.","fr":"Le projet relie le territoire déjà vécu et étudié à Caeté-Açu à une immersion de sept jours dans la Vale do Pati et à un axe historique de terrain à Mucugê et Igatu. Des guides ou accompagnateurs locaux seront recherchés selon chaque itinéraire.","es":"El proyecto conecta el territorio ya vivido e investigado en Caeté-Açu con una inmersión de siete días en el Vale do Pati y un eje histórico de campo en Mucugê e Igatu. Se buscarán guías o conductores locales según cada recorrido."}
+    },
+    "atlasColor": {
+      "title":{"en":"Atlas of Colour","pt-BR":"Atlas de Cor","fr":"Atlas des couleurs","es":"Atlas de Color"},
+      "body":{"en":"A visual category within the project website. Each entry combines a field photograph with filled colour samples and HEX references, and may later connect to sketchbook pages, revised identifications and related paintings.","pt-BR":"Uma categoria visual dentro do site do projeto. Cada entrada combina fotografia de campo com amostras de cor preenchidas e referências HEX, podendo depois se conectar a páginas do sketchbook, identificações revisadas e pinturas relacionadas.","fr":"Une catégorie visuelle du site du projet. Chaque entrée associe une photographie de terrain à des échantillons de couleur remplis et à des références HEX, avec la possibilité de les relier ensuite aux carnets, aux identifications vérifiées et aux peintures correspondantes.","es":"Una categoría visual dentro del sitio del proyecto. Cada entrada combina una fotografía de campo con muestras de color rellenas y referencias HEX, y podrá conectarse después con páginas del cuaderno, identificaciones revisadas y pinturas relacionadas."}
+    },
+    "atlasSound": {
+      "title":{"en":"Sound Atlas","pt-BR":"Atlas Sonoro","fr":"Atlas sonore","es":"Atlas Sonoro"},
+      "body":{"en":"A category within the project website for recordings made in each research area: water, paths, wind, vegetation, birds, animals and authorised local activities. No sound will be published as evidence for a place unless it was recorded there.","pt-BR":"Uma categoria dentro do site do projeto para gravações realizadas em cada núcleo de pesquisa: água, caminhos, vento, vegetação, aves, animais e atividades locais autorizadas. Nenhum som será publicado como registro de um lugar se não tiver sido gravado nele.","fr":"Une catégorie du site du projet consacrée aux enregistrements réalisés dans chaque territoire de recherche : eau, chemins, vent, végétation, oiseaux, animaux et activités locales autorisées. Aucun son ne sera publié comme document d’un lieu s’il n’y a pas été enregistré.","es":"Una categoría dentro del sitio del proyecto para grabaciones realizadas en cada núcleo de investigación: agua, caminos, viento, vegetación, aves, animales y actividades locales autorizadas. Ningún sonido se publicará como registro de un lugar si no fue grabado allí."}
+    },
+    "paintings": {
+      "title":{"en":"Eight paintings","pt-BR":"Oito pinturas","fr":"Huit peintures","es":"Ocho pinturas"},
+      "body":{"en":"The field research will return to the studio as eight new paintings measuring 100 × 80 cm. The works will be organised by movements and questions rather than by a mandatory painting for each place.","pt-BR":"A pesquisa de campo retornará ao ateliê como oito novas pinturas de 100 × 80 cm. As obras serão organizadas por movimentos e perguntas, e não por uma pintura obrigatória para cada lugar.","fr":"La recherche de terrain reviendra à l’atelier sous la forme de huit nouvelles peintures de 100 × 80 cm. Les œuvres seront organisées par mouvements et questions, plutôt que par une peinture obligatoire pour chaque lieu.","es":"La investigación de campo volverá al taller como ocho nuevas pinturas de 100 × 80 cm. Las obras se organizarán por movimientos y preguntas, y no por una pintura obligatoria para cada lugar."}
+    },
+    "film": {
+      "title":{"en":"Mini-documentary","pt-BR":"Minidocumentário","fr":"Mini-documentaire","es":"Minidocumental"},
+      "body":{"en":"A film of up to 15 minutes will combine the experience of the research, local narratives, sound, landscape and the painting process. The website will preserve a broader archive than the final film.","pt-BR":"Um filme de até 15 minutos reunirá a experiência da pesquisa, narrativas locais, som, paisagem e processo de pintura. O site preservará um acervo mais amplo do que o filme final.","fr":"Un film d’une durée maximale de 15 minutes réunira l’expérience de la recherche, des récits locaux, le son, le paysage et le processus de peinture. Le site conservera une archive plus large que le film final.","es":"Una película de hasta 15 minutos reunirá la experiencia de la investigación, relatos locales, sonido, paisaje y proceso de pintura. El sitio conservará un archivo más amplio que la película final."}
+    },
+    "school": {
+      "title":{"en":"Presentation at the Municipal School of Caeté-Açu","pt-BR":"Apresentação na Escola Municipal de 1º Grau de Caeté-Açu","fr":"Présentation à l’École Municipale de Caeté-Açu","es":"Presentación en la Escuela Municipal de Caeté-Açu"},
+      "body":{"en":"The public presentation will bring together the eight paintings, the mini-documentary, a conversation with the team and about 400 black-and-white booklets for children to colour and create from drawings derived from Renata’s research.","pt-BR":"A apresentação pública reunirá as oito pinturas, o minidocumentário, uma conversa com a equipe e cerca de 400 cadernos em preto e branco para as crianças colorirem e criarem a partir de desenhos derivados da pesquisa de Renata.","fr":"La présentation publique réunira les huit peintures, le mini-documentaire, une rencontre avec l’équipe et environ 400 cahiers en noir et blanc permettant aux enfants de colorier et de créer à partir de dessins issus de la recherche de Renata.","es":"La presentación pública reunirá las ocho pinturas, el minidocumental, una conversación con el equipo y cerca de 400 cuadernos en blanco y negro para que los niños coloreen y creen a partir de dibujos derivados de la investigación de Renata."}
+    },
+    "exhibitions": {
+      "title":{"en":"Previous educational and exhibition experience","pt-BR":"Experiências educativas e expositivas anteriores","fr":"Expériences éducatives et d’exposition antérieures","es":"Experiencias educativas y expositivas anteriores"},
+      "body":{"en":"Two complete archival galleries document previous experiences that connect exhibition, dialogue and artistic activity with students and teachers: the Museu de Antropologia do Vale do Paraíba (MAV) and EducaMais Jacareí — Espaço Tomie Ohtake.","pt-BR":"Duas galerias completas de arquivo documentam experiências anteriores que conectam exposição, diálogo e atividade artística com estudantes e professores: o Museu de Antropologia do Vale do Paraíba (MAV) e o EducaMais Jacareí — Espaço Tomie Ohtake.","fr":"Deux galeries d’archives complètes documentent des expériences antérieures reliant exposition, dialogue et activité artistique avec élèves et enseignants : le Museu de Antropologia do Vale do Paraíba (MAV) et EducaMais Jacareí — Espaço Tomie Ohtake.","es":"Dos galerías de archivo completas documentan experiencias anteriores que conectan exposición, diálogo y actividad artística con estudiantes y docentes: el Museu de Antropologia do Vale do Paraíba (MAV) y EducaMais Jacareí — Espaço Tomie Ohtake."}
+    },
+    "team": {
+      "title":{"en":"Team and local knowledge","pt-BR":"Equipe e conhecimento local","fr":"Équipe et connaissance locale","es":"Equipo y conocimiento local"},
+      "renata":{"en":"Painter and visual artist. Leads the artistic research, sketchbook, pictorial decisions, eight paintings and public presentation.","pt-BR":"Pintora e artista visual. Conduz a pesquisa artística, o sketchbook, as decisões pictóricas, as oito pinturas e a apresentação pública.","fr":"Peintre et artiste visuelle. Elle conduit la recherche artistique, le carnet de croquis, les décisions picturales, les huit peintures et la présentation publique.","es":"Pintora y artista visual. Conduce la investigación artística, el cuaderno de bocetos, las decisiones pictóricas, las ocho pinturas y la presentación pública."},
+      "axel":{"en":"Artist, songwriter and audiovisual director, founder of RUADOFLOW. In Água de Dentro he is responsible for photography, sound, mini-documentary, editing and website.","pt-BR":"Artista, compositor e realizador audiovisual, fundador da RUADOFLOW. Em Água de Dentro, responde por fotografia, som, minidocumentário, edição e site.","fr":"Artiste, auteur-compositeur et réalisateur audiovisuel, fondateur de RUADOFLOW. Dans Água de Dentro, il est responsable de la photographie, du son, du mini-documentaire, du montage et du site.","es":"Artista, compositor y realizador audiovisual, fundador de RUADOFLOW. En Água de Dentro es responsable de fotografía, sonido, minidocumental, edición y sitio web."},
+      "guides":{"en":"Local guides or conductors will be sought according to each route, integrating safety, access and knowledge of the territory.","pt-BR":"Guias ou condutores locais serão buscados de acordo com cada rota, integrando segurança, acesso e conhecimento do território.","fr":"Des guides ou accompagnateurs locaux seront recherchés selon chaque itinéraire, en intégrant sécurité, accès et connaissance du territoire.","es":"Se buscarán guías o conductores locales según cada recorrido, integrando seguridad, acceso y conocimiento del territorio."}
+    }
+  }
+}

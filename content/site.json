@@ -1,0 +1,19 @@
+{
+  "origin": "https://aguadedentro.renataalberigi.com.br",
+  "defaultLocale": "es",
+  "locales": [
+    "es",
+    "pt-BR",
+    "fr",
+    "en"
+  ],
+  "localePaths": {
+    "es": "",
+    "pt-BR": "pt-br/",
+    "fr": "fr/",
+    "en": "en/"
+  },
+  "customDomain": "aguadedentro.renataalberigi.com.br",
+  "robots": "noindex,follow",
+  "projectSiteYears": 5
+}

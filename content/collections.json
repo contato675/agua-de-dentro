@@ -1,0 +1,27 @@
+[
+  {
+    "id":"water","type":"field","mediaKey":"water","route":"research/water/","cover":2,
+    "title":{"en":"Waters of Caeté-Açu","pt-BR":"Águas de Caeté-Açu","fr":"Eaux de Caeté-Açu","es":"Aguas de Caeté-Açu"},
+    "description":{"en":"Surface, transparency, reflection, margins and the relationship between water and rock. Previous field research in Caeté-Açu, Chapada Diamantina, Bahia, Brazil.","pt-BR":"Superfície, transparência, reflexo, margem e relação entre água e rocha. Pesquisa de campo anterior em Caeté-Açu, Chapada Diamantina, Bahia, Brasil.","fr":"Surface, transparence, reflet, rives et relation entre l’eau et la roche. Recherche de terrain antérieure à Caeté-Açu, Chapada Diamantina, Bahia, Brésil.","es":"Superficie, transparencia, reflejo, margen y relación entre agua y roca. Investigación de campo anterior en Caeté-Açu, Chapada Diamantina, Bahia, Brasil."}
+  },
+  {
+    "id":"stone","type":"field","mediaKey":"stone","route":"research/stones/","cover":5,
+    "title":{"en":"Rocks and paths","pt-BR":"Pedras e caminhos","fr":"Roches et chemins","es":"Piedras y caminos"},
+    "description":{"en":"Texture, scale, layers, passage and material support in previous field research in Caeté-Açu.","pt-BR":"Textura, escala, camadas, passagem e suporte material na pesquisa de campo anterior em Caeté-Açu.","fr":"Texture, échelle, strates, passage et support matériel dans la recherche de terrain antérieure à Caeté-Açu.","es":"Textura, escala, capas, paso y soporte material en la investigación de campo anterior en Caeté-Açu."}
+  },
+  {
+    "id":"vegetation","type":"field","mediaKey":"vegetation","route":"research/vegetation/","cover":10,
+    "title":{"en":"Vegetation and environmental transitions","pt-BR":"Vegetação e transições ambientais","fr":"Végétation et transitions environnementales","es":"Vegetación y transiciones ambientales"},
+    "description":{"en":"A visual field notebook on plants, textures, colours and transitions. The project notes that the Chapada Diamantina National Park includes examples of Atlantic Forest, Cerrado and Caatinga.","pt-BR":"Um caderno visual de campo sobre plantas, texturas, cores e transições. O projeto registra que o Parque Nacional da Chapada Diamantina reúne exemplos de Mata Atlântica, Cerrado e Caatinga.","fr":"Un carnet visuel de terrain sur les plantes, textures, couleurs et transitions. Le projet rappelle que le Parc national de la Chapada Diamantina réunit des exemples de forêt atlantique, de Cerrado et de Caatinga.","es":"Un cuaderno visual de campo sobre plantas, texturas, colores y transiciones. El proyecto registra que el Parque Nacional de la Chapada Diamantina reúne ejemplos de Mata Atlántica, Cerrado y Caatinga."}
+  },
+  {
+    "id":"mav","type":"archive","mediaKey":"mav","route":"archive/mav-2018/","cover":3,"date":"2018",
+    "title":{"en":"MAV · exhibition and activity with municipal-school children","pt-BR":"MAV · exposição e atividade com crianças da rede municipal","fr":"MAV · exposition et activité avec des enfants du réseau municipal","es":"MAV · exposición y actividad con niños de la red municipal"},
+    "description":{"en":"Complete archival gallery from the Museu de Antropologia do Vale do Paraíba (MAV), Jacareí, during Renata’s 2018 educational and exhibition activities.","pt-BR":"Galeria completa de arquivo do Museu de Antropologia do Vale do Paraíba (MAV), em Jacareí, durante as atividades educativas e expositivas de Renata em 2018.","fr":"Galerie d’archives complète du Museu de Antropologia do Vale do Paraíba (MAV), à Jacareí, lors des activités éducatives et d’exposition de Renata en 2018.","es":"Galería completa de archivo del Museu de Antropologia do Vale do Paraíba (MAV), en Jacareí, durante las actividades educativas y expositivas de Renata en 2018."}
+  },
+  {
+    "id":"educamais","type":"archive","mediaKey":"educamais","route":"archive/educamais-2017/","cover":8,"date":"2017",
+    "title":{"en":"EducaMais Jacareí · Espaço Tomie Ohtake","pt-BR":"EducaMais Jacareí · Espaço Tomie Ohtake","fr":"EducaMais Jacareí · Espaço Tomie Ohtake","es":"EducaMais Jacareí · Espaço Tomie Ohtake"},
+    "description":{"en":"Complete archival gallery of the 2017 installation, talk and artistic activities with teachers and secondary-school students at EducaMais Jacareí — Espaço Tomie Ohtake.","pt-BR":"Galeria completa de arquivo da instalação, palestra e atividades artísticas realizadas em 2017 com professores e estudantes do ensino médio no EducaMais Jacareí — Espaço Tomie Ohtake.","fr":"Galerie d’archives complète de l’installation, de la conférence et des activités artistiques réalisées en 2017 avec des enseignants et des lycéens à EducaMais Jacareí — Espaço Tomie Ohtake.","es":"Galería completa de archivo de la instalación, charla y actividades artísticas realizadas en 2017 con docentes y estudiantes de enseñanza media en EducaMais Jacareí — Espaço Tomie Ohtake."}
+  }
+]

@@ -1,0 +1,616 @@
+{
+  "field": {
+    "water": [
+      {
+        "path": "images/field/water/01.webp",
+        "width": 1280,
+        "height": 1280,
+        "id": "water-01"
+      },
+      {
+        "path": "images/field/water/02.webp",
+        "width": 960,
+        "height": 1280,
+        "id": "water-02"
+      },
+      {
+        "path": "images/field/water/03.webp",
+        "width": 960,
+        "height": 1280,
+        "id": "water-03"
+      },
+      {
+        "path": "images/field/water/04.webp",
+        "width": 1280,
+        "height": 1280,
+        "id": "water-04"
+      },
+      {
+        "path": "images/field/water/05.webp",
+        "width": 1280,
+        "height": 1280,
+        "id": "water-05"
+      },
+      {
+        "path": "images/field/water/06.webp",
+        "width": 960,
+        "height": 1280,
+        "id": "water-06"
+      },
+      {
+        "path": "images/field/water/07.webp",
+        "width": 1280,
+        "height": 1280,
+        "id": "water-07"
+      },
+      {
+        "path": "images/field/water/08.webp",
+        "width": 960,
+        "height": 1280,
+        "id": "water-08"
+      },
+      {
+        "path": "images/field/water/09.webp",
+        "width": 1024,
+        "height": 1280,
+        "id": "water-09"
+      },
+      {
+        "path": "images/field/water/10.webp",
+        "width": 1024,
+        "height": 1280,
+        "id": "water-10"
+      },
+      {
+        "path": "images/field/water/11.webp",
+        "width": 960,
+        "height": 1280,
+        "id": "water-11"
+      },
+      {
+        "path": "images/field/water/12.webp",
+        "width": 960,
+        "height": 1280,
+        "id": "water-12"
+      }
+    ],
+    "stone": [
+      {
+        "path": "images/field/stone/01.webp",
+        "width": 960,
+        "height": 1280,
+        "id": "stone-01"
+      },
+      {
+        "path": "images/field/stone/02.webp",
+        "width": 960,
+        "height": 1280,
+        "id": "stone-02"
+      },
+      {
+        "path": "images/field/stone/03.webp",
+        "width": 960,
+        "height": 1280,
+        "id": "stone-03"
+      },
+      {
+        "path": "images/field/stone/04.webp",
+        "width": 960,
+        "height": 1280,
+        "id": "stone-04"
+      },
+      {
+        "path": "images/field/stone/05.webp",
+        "width": 960,
+        "height": 1280,
+        "id": "stone-05"
+      },
+      {
+        "path": "images/field/stone/06.webp",
+        "width": 960,
+        "height": 1280,
+        "id": "stone-06"
+      },
+      {
+        "path": "images/field/stone/07.webp",
+        "width": 960,
+        "height": 1280,
+        "id": "stone-07"
+      },
+      {
+        "path": "images/field/stone/08.webp",
+        "width": 1024,
+        "height": 1280,
+        "id": "stone-08"
+      },
+      {
+        "path": "images/field/stone/09.webp",
+        "width": 960,
+        "height": 1280,
+        "id": "stone-09"
+      },
+      {
+        "path": "images/field/stone/10.webp",
+        "width": 960,
+        "height": 1280,
+        "id": "stone-10"
+      },
+      {
+        "path": "images/field/stone/11.webp",
+        "width": 1200,
+        "height": 1600,
+        "id": "stone-11"
+      },
+      {
+        "path": "images/field/stone/12.webp",
+        "width": 960,
+        "height": 1280,
+        "id": "stone-12"
+      }
+    ],
+    "vegetation": [
+      {
+        "path": "images/field/vegetation/01.webp",
+        "width": 960,
+        "height": 1280,
+        "id": "vegetation-01"
+      },
+      {
+        "path": "images/field/vegetation/02.webp",
+        "width": 960,
+        "height": 1280,
+        "id": "vegetation-02"
+      },
+      {
+        "path": "images/field/vegetation/03.webp",
+        "width": 960,
+        "height": 1280,
+        "id": "vegetation-03"
+      },
+      {
+        "path": "images/field/vegetation/04.webp",
+        "width": 960,
+        "height": 1280,
+        "id": "vegetation-04"
+      },
+      {
+        "path": "images/field/vegetation/05.webp",
+        "width": 960,
+        "height": 1280,
+        "id": "vegetation-05"
+      },
+      {
+        "path": "images/field/vegetation/06.webp",
+        "width": 960,
+        "height": 1280,
+        "id": "vegetation-06"
+      },
+      {
+        "path": "images/field/vegetation/07.webp",
+        "width": 960,
+        "height": 1280,
+        "id": "vegetation-07"
+      },
+      {
+        "path": "images/field/vegetation/08.webp",
+        "width": 960,
+        "height": 1280,
+        "id": "vegetation-08"
+      },
+      {
+        "path": "images/field/vegetation/09.webp",
+        "width": 960,
+        "height": 1280,
+        "id": "vegetation-09"
+      },
+      {
+        "path": "images/field/vegetation/10.webp",
+        "width": 960,
+        "height": 1280,
+        "id": "vegetation-10"
+      },
+      {
+        "path": "images/field/vegetation/11.webp",
+        "width": 960,
+        "height": 1280,
+        "id": "vegetation-11"
+      },
+      {
+        "path": "images/field/vegetation/12.webp",
+        "width": 1280,
+        "height": 1280,
+        "id": "vegetation-12"
+      },
+      {
+        "path": "images/field/vegetation/13.webp",
+        "width": 960,
+        "height": 1280,
+        "id": "vegetation-13"
+      },
+      {
+        "path": "images/field/vegetation/14.webp",
+        "width": 960,
+        "height": 1280,
+        "id": "vegetation-14"
+      }
+    ]
+  },
+  "routes": {
+    "pati": {
+      "path": "images/routes/pati.webp",
+      "width": 2000,
+      "height": 1333
+    },
+    "igatu": {
+      "path": "images/routes/igatu.webp",
+      "width": 2000,
+      "height": 1500
+    }
+  },
+  "atlas": [
+    [
+      "stone",
+      "stone-04"
+    ],
+    [
+      "flower",
+      "vegetation-11"
+    ],
+    [
+      "amber-water",
+      "water-05"
+    ],
+    [
+      "reflection",
+      "water-07"
+    ],
+    [
+      "blue-cactus",
+      "vegetation-09"
+    ],
+    [
+      "lichen",
+      "stone-06"
+    ],
+    [
+      "yellow-flower",
+      "vegetation-08"
+    ],
+    [
+      "leaf-rock",
+      "vegetation-03"
+    ]
+  ],
+  "exhibitions": {
+    "mav": [
+      {
+        "path": "assets/images/exhibitions/mav/01.webp",
+        "width": 1400,
+        "height": 933
+      },
+      {
+        "path": "assets/images/exhibitions/mav/02.webp",
+        "width": 1280,
+        "height": 853
+      },
+      {
+        "path": "assets/images/exhibitions/mav/03.webp",
+        "width": 1280,
+        "height": 853
+      },
+      {
+        "path": "assets/images/exhibitions/mav/04.webp",
+        "width": 1280,
+        "height": 853
+      },
+      {
+        "path": "assets/images/exhibitions/mav/05.webp",
+        "width": 933,
+        "height": 1400
+      },
+      {
+        "path": "assets/images/exhibitions/mav/06.webp",
+        "width": 1400,
+        "height": 933
+      },
+      {
+        "path": "assets/images/exhibitions/mav/07.webp",
+        "width": 1400,
+        "height": 933
+      },
+      {
+        "path": "assets/images/exhibitions/mav/08.webp",
+        "width": 853,
+        "height": 1280
+      },
+      {
+        "path": "assets/images/exhibitions/mav/09.webp",
+        "width": 1400,
+        "height": 933
+      },
+      {
+        "path": "assets/images/exhibitions/mav/10.webp",
+        "width": 1280,
+        "height": 853
+      },
+      {
+        "path": "assets/images/exhibitions/mav/11.webp",
+        "width": 933,
+        "height": 1400
+      },
+      {
+        "path": "assets/images/exhibitions/mav/12.webp",
+        "width": 1280,
+        "height": 853
+      },
+      {
+        "path": "assets/images/exhibitions/mav/13.webp",
+        "width": 1280,
+        "height": 853
+      }
+    ],
+    "educamais": [
+      {
+        "path": "assets/images/exhibitions/educamais/01.webp",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "path": "assets/images/exhibitions/educamais/02.webp",
+        "width": 1280,
+        "height": 1280
+      },
+      {
+        "path": "assets/images/exhibitions/educamais/03.webp",
+        "width": 1280,
+        "height": 768
+      },
+      {
+        "path": "assets/images/exhibitions/educamais/04.webp",
+        "width": 1040,
+        "height": 585
+      },
+      {
+        "path": "assets/images/exhibitions/educamais/05.webp",
+        "width": 1050,
+        "height": 1400
+      },
+      {
+        "path": "assets/images/exhibitions/educamais/06.webp",
+        "width": 1400,
+        "height": 1050
+      },
+      {
+        "path": "assets/images/exhibitions/educamais/07.webp",
+        "width": 1280,
+        "height": 960
+      },
+      {
+        "path": "assets/images/exhibitions/educamais/08.webp",
+        "width": 960,
+        "height": 1280
+      },
+      {
+        "path": "assets/images/exhibitions/educamais/09.webp",
+        "width": 1050,
+        "height": 1400
+      },
+      {
+        "path": "assets/images/exhibitions/educamais/10.webp",
+        "width": 1280,
+        "height": 960
+      },
+      {
+        "path": "assets/images/exhibitions/educamais/11.webp",
+        "width": 1164,
+        "height": 655
+      },
+      {
+        "path": "assets/images/exhibitions/educamais/12.webp",
+        "width": 836,
+        "height": 836
+      },
+      {
+        "path": "assets/images/exhibitions/educamais/13.webp",
+        "width": 960,
+        "height": 720
+      },
+      {
+        "path": "assets/images/exhibitions/educamais/14.webp",
+        "width": 1164,
+        "height": 655
+      },
+      {
+        "path": "assets/images/exhibitions/educamais/15.webp",
+        "width": 1080,
+        "height": 608
+      },
+      {
+        "path": "assets/images/exhibitions/educamais/16.webp",
+        "width": 960,
+        "height": 720
+      },
+      {
+        "path": "assets/images/exhibitions/educamais/17.webp",
+        "width": 1164,
+        "height": 655
+      },
+      {
+        "path": "assets/images/exhibitions/educamais/18.webp",
+        "width": 1164,
+        "height": 655
+      },
+      {
+        "path": "assets/images/exhibitions/educamais/19.webp",
+        "width": 720,
+        "height": 960
+      },
+      {
+        "path": "assets/images/exhibitions/educamais/20.webp",
+        "width": 960,
+        "height": 720
+      },
+      {
+        "path": "assets/images/exhibitions/educamais/21.webp",
+        "width": 960,
+        "height": 720
+      },
+      {
+        "path": "assets/images/exhibitions/educamais/22.webp",
+        "width": 960,
+        "height": 720
+      },
+      {
+        "path": "assets/images/exhibitions/educamais/23.webp",
+        "width": 720,
+        "height": 960
+      },
+      {
+        "path": "assets/images/exhibitions/educamais/24.webp",
+        "width": 960,
+        "height": 720
+      },
+      {
+        "path": "assets/images/exhibitions/educamais/25.webp",
+        "width": 720,
+        "height": 960
+      },
+      {
+        "path": "assets/images/exhibitions/educamais/26.webp",
+        "width": 720,
+        "height": 960
+      },
+      {
+        "path": "assets/images/exhibitions/educamais/27.webp",
+        "width": 720,
+        "height": 960
+      },
+      {
+        "path": "assets/images/exhibitions/educamais/28.webp",
+        "width": 960,
+        "height": 720
+      },
+      {
+        "path": "assets/images/exhibitions/educamais/29.webp",
+        "width": 960,
+        "height": 720
+      },
+      {
+        "path": "assets/images/exhibitions/educamais/30.webp",
+        "width": 960,
+        "height": 720
+      },
+      {
+        "path": "assets/images/exhibitions/educamais/31.webp",
+        "width": 960,
+        "height": 720
+      },
+      {
+        "path": "assets/images/exhibitions/educamais/32.webp",
+        "width": 960,
+        "height": 720
+      },
+      {
+        "path": "assets/images/exhibitions/educamais/33.webp",
+        "width": 1019,
+        "height": 574
+      },
+      {
+        "path": "assets/images/exhibitions/educamais/34.webp",
+        "width": 1280,
+        "height": 718
+      },
+      {
+        "path": "assets/images/exhibitions/educamais/35.webp",
+        "width": 1400,
+        "height": 788
+      },
+      {
+        "path": "assets/images/exhibitions/educamais/36.webp",
+        "width": 960,
+        "height": 720
+      },
+      {
+        "path": "assets/images/exhibitions/educamais/37.webp",
+        "width": 1400,
+        "height": 788
+      },
+      {
+        "path": "assets/images/exhibitions/educamais/38.webp",
+        "width": 1400,
+        "height": 788
+      },
+      {
+        "path": "assets/images/exhibitions/educamais/39.webp",
+        "width": 1280,
+        "height": 1280
+      },
+      {
+        "path": "assets/images/exhibitions/educamais/40.webp",
+        "width": 1400,
+        "height": 788
+      },
+      {
+        "path": "assets/images/exhibitions/educamais/41.webp",
+        "width": 1164,
+        "height": 655
+      }
+    ]
+  },
+  "processSeries": [
+    {
+      "id": "ponte-nova",
+      "field": {
+        "path": "images/process/ponte-nova/field.webp",
+        "width": 1024,
+        "height": 1280
+      },
+      "sketch": {
+        "path": "images/process/ponte-nova/sketch.webp",
+        "width": 825,
+        "height": 934
+      },
+      "painting": {
+        "path": "images/process/ponte-nova/painting.webp",
+        "width": 640,
+        "height": 853
+      }
+    },
+    {
+      "id": "poco-da-maternidade",
+      "field": {
+        "path": "images/process/poco-da-maternidade/field.webp",
+        "width": 1200,
+        "height": 1600
+      },
+      "sketch": {
+        "path": "images/process/poco-da-maternidade/sketch.webp",
+        "width": 440,
+        "height": 618
+      },
+      "painting": {
+        "path": "images/process/poco-da-maternidade/painting.webp",
+        "width": 640,
+        "height": 853
+      }
+    },
+    {
+      "id": "aureo",
+      "field": {
+        "path": "images/process/aureo/field.webp",
+        "width": 1024,
+        "height": 1280
+      },
+      "sketch": {
+        "path": "images/process/aureo/sketch.webp",
+        "width": 478,
+        "height": 659
+      },
+      "painting": {
+        "path": "images/process/aureo/painting.webp",
+        "width": 960,
+        "height": 1280
+      }
+    }
+  ]
+}

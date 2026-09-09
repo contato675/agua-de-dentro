@@ -1,0 +1,25 @@
+:root {
+  color-scheme: light;
+  --paper: #ffffff;
+  --support: #f6f6f6;
+  --ink: #171717;
+  --muted: #626262;
+  --line: #e7e7e7;
+  --font-body: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  --font-display: var(--font-body);
+  --cols: 4;
+  --gutter: 16px;
+  --margin: 16px;
+  --baseline: 8px;
+  --leading: 1.5rem;
+  --maxw: 1488px;
+  --radius-ui: 12px;
+  --motion-fast: 150ms;
+  --motion-overlay: 220ms;
+}
+@media (min-width: 768px) {
+  :root { --cols: 8; --gutter: 24px; --margin: 32px; }
+}
+@media (min-width: 1024px) {
+  :root { --cols: 12; --margin: 48px; }
+}

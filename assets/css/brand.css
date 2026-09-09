@@ -1,0 +1,27 @@
+/* One horizontal editorial collection; full, uncropped designs. */
+.brand-byline { margin-bottom: 16px; }
+.brand-carousel { min-width: 0; }
+.brand-rail { display: flex; gap: var(--gutter); overflow-x: auto; scroll-snap-type: x proximity; list-style: none; margin: 0; padding: 4px 0 16px; scrollbar-width: thin; }
+.brand-rail > li { flex: 0 0 82%; min-width: 0; scroll-snap-align: start; }
+.brand-rail a { display: block; }
+.brand-rail img { display: block; width: 100%; height: auto; object-fit: contain; }
+.brand-actions { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 16px; padding-top: 16px; }
+.brand-actions > a { gap: 16px; }
+.brand-controls { display: flex; align-items: center; gap: 16px; }
+.brand-controls button { min-width: 48px; min-height: 48px; border: 1px solid var(--line); background: var(--paper); border-radius: var(--radius-ui); }
+.brand-controls button:disabled { opacity: .45; cursor: default; }
+.brand-controls output { min-width: 72px; text-align: center; color: var(--muted); font-size: .875rem; }
+.brand-project-info { max-width: 64ch; margin-block: 32px 48px; }
+.brand-full-gallery { display: grid; grid-template-columns: minmax(0,1fr); gap: 40px var(--gutter); padding-bottom: 64px; }
+.brand-full-gallery figure { min-width: 0; margin: 0; scroll-margin-top: 24px; }
+.brand-full-gallery a { display: block; }
+.brand-full-gallery img { width: 100%; height: auto; display: block; object-fit: contain; }
+.brand-full-gallery figcaption { padding-top: 16px; }
+@media (min-width: 768px) {
+  .brand-rail > li { flex-basis: calc((100% - var(--gutter)) / 2.25); }
+  .brand-full-gallery { grid-template-columns: repeat(2,minmax(0,1fr)); }
+}
+@media (min-width: 1024px) {
+  .brand-rail > li { flex-basis: calc((100% - 3 * var(--gutter)) / 4); }
+  .brand-full-gallery { grid-template-columns: repeat(3,minmax(0,1fr)); }
+}

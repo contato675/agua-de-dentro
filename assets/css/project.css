@@ -1,0 +1,43 @@
+/* Água de Dentro extends the Renata portfolio template without changing its visual language. */
+.project-hero-media { grid-column: 1 / -1; margin: 0; }
+.project-hero-media img { display:block; width:100%; height:auto; }
+.project-subheading { margin-block: 40px 24px; }
+.project-subheading h3 { font-size: 1.5rem; line-height: 2rem; margin-bottom: 8px; }
+.project-note { max-width: 64ch; color: var(--muted); }
+.field-gallery + .project-note { margin-top: 32px; }
+.process-strip { grid-column: 1 / -1; }
+.process-step { grid-column: span 4; }
+.process-step img { width:100%; height:auto; display:block; }
+.process-step .caption { margin-top:16px; }
+.route-card { grid-column: 1 / -1; }
+.route-card img { width:100%; height:auto; display:block; margin-bottom:16px; }
+.route-card .meta { max-width: 54ch; }
+.atlas-card { grid-column: span 4; }
+.atlas-card img { display:block; width:100%; height:auto; }
+.swatches { display:flex; gap:6px; margin-block:16px 8px; }
+.swatch { width:36px; height:36px; flex:0 0 36px; border:1px solid var(--line); }
+.swatch-labels { display:flex; gap:6px; color:var(--muted); font-size:.6875rem; line-height:1rem; }
+.swatch-labels span { width:36px; flex:0 0 36px; overflow:hidden; }
+.sound-card { grid-column: 1 / -1; padding:24px; background:var(--support); }
+.sound-card p:last-child { margin-bottom:0; }
+.future-grid { list-style:none; padding:0; margin:0; row-gap:24px; }
+.future-grid li { grid-column: span 2; padding:24px; min-height:128px; background:var(--support); }
+.source-list { margin:0; padding-left:1.25rem; max-width:72ch; }
+.source-list li { margin-bottom:12px; }
+.project-team { row-gap:24px; }
+.project-team article { grid-column: 1 / -1; background:var(--support); padding:24px; }
+@media (min-width:768px) {
+  .route-card { grid-column: span 4; }
+  .sound-card { grid-column: span 4; }
+  .project-team article { grid-column: span 4; }
+}
+@media (min-width:1024px) {
+  .project-hero-media { grid-column: 8 / 13; }
+  .project-hero-media img { max-height:680px; object-fit:contain; }
+  .hero-copy { grid-column: 1 / 8; }
+}
+@media (max-width:767px) {
+  .process-step, .atlas-card, .future-grid li { grid-column: 1 / -1; }
+  .swatch { width:34px; height:34px; flex-basis:34px; }
+  .swatch-labels span { width:34px; flex-basis:34px; }
+}

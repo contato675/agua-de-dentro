@@ -1,0 +1,12 @@
+{
+  "name":"agua-de-dentro-project-site",
+  "version":"0.1.0",
+  "private":true,
+  "type":"module",
+  "engines":{"node":">=22"},
+  "scripts":{
+    "build":"node scripts/build.mjs",
+    "check":"node scripts/check.mjs",
+    "verify":"npm run build && npm run check"
+  }
+}

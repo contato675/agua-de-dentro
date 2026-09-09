@@ -1,0 +1,6 @@
+dist/
+artifacts/
+.chrome-*/
+*.log
+.DS_Store
+Thumbs.db
