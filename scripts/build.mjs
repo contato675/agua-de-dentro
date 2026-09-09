@@ -28,7 +28,7 @@ async function load(){
 function validate(data){
  const errors=[];
  if(JSON.stringify(data.site.locales)!==JSON.stringify(LOCALES))errors.push('Locale contract must be en, pt-BR, fr, es.');
- if(data.site.defaultLocale!=='es')errors.push('Spanish must remain the canonical entry.');
+ if(data.site.defaultLocale!=='es')errors.push('The configured root locale must remain Spanish.');
  const keys=Object.keys(data.dictionaries.en).sort().join('|');
  for(const loc of LOCALES){
   const d=data.dictionaries[loc];
@@ -94,7 +94,7 @@ function alternates(data,route=''){
 }
 function document(data,locale,route,title,description,main){
  const u=data.dictionaries[locale], canonical=absolute(data.site,locale,route);
- return `<!doctype html><html lang="${e(locale)}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="robots" content="${e(data.site.robots)}"><meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'"><title>${e(title)}</title><meta name="description" content="${e(description)}"><meta property="og:title" content="${e(title)}"><meta property="og:description" content="${e(description)}"><meta property="og:url" content="${e(canonical)}"><meta property="og:type" content="website"><meta property="og:locale" content="${e(LOCALE_CONFIG[locale].og)}"><link rel="canonical" href="${e(canonical)}">${alternates(data,route)}<link rel="stylesheet" href="/assets/css/tokens.css"><link rel="stylesheet" href="/assets/css/scaffold.css"><link rel="stylesheet" href="/assets/css/gallery.css"><link rel="stylesheet" href="/assets/css/navigation.css"><link rel="stylesheet" href="/assets/css/brand.css"><link rel="stylesheet" href="/assets/css/project.css?v=${e(PROJECT_CSS_VERSION)}"><link rel="stylesheet" href="/assets/css/atlas-colors.css"><script src="/assets/js/locale-navigation.js" defer></script><script src="/assets/js/navigation.js" defer></script><script src="/assets/js/language-picker.js" defer></script></head><body><a class="skip" href="#content">${e(u.skip)}</a>${header(data,locale,route)}${drawer(data,locale,route)}<main id="content" class="wrap">${main}</main>${footer(data,locale)}</body></html>`;
+ return `<!doctype html><html lang="${e(locale)}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="robots" content="${e(data.site.robots)}"><meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self'; frame-src https://www.youtube-nocookie.com; object-src 'none'; base-uri 'none'; form-action 'none'"><title>${e(title)}</title><meta name="description" content="${e(description)}"><meta property="og:title" content="${e(title)}"><meta property="og:description" content="${e(description)}"><meta property="og:url" content="${e(canonical)}"><meta property="og:type" content="website"><meta property="og:locale" content="${e(LOCALE_CONFIG[locale].og)}"><link rel="canonical" href="${e(canonical)}">${alternates(data,route)}<link rel="stylesheet" href="/assets/css/tokens.css"><link rel="stylesheet" href="/assets/css/scaffold.css"><link rel="stylesheet" href="/assets/css/gallery.css"><link rel="stylesheet" href="/assets/css/navigation.css"><link rel="stylesheet" href="/assets/css/brand.css"><link rel="stylesheet" href="/assets/css/project.css?v=${e(PROJECT_CSS_VERSION)}"><link rel="stylesheet" href="/assets/css/atlas-colors.css"><script src="/assets/js/locale-navigation.js" defer></script><script src="/assets/js/navigation.js" defer></script><script src="/assets/js/language-picker.js" defer></script><script src="/assets/js/video-modal.js" defer></script></head><body><a class="skip" href="#content">${e(u.skip)}</a>${header(data,locale,route)}${drawer(data,locale,route)}<main id="content" class="wrap">${main}</main>${footer(data,locale)}</body></html>`;
 }
 const processLabels={
  en:['Field photograph','Sketchbook study','Painting'],
@@ -113,7 +113,9 @@ function processStrip(data,locale){
 }
 function collectionCard(data,locale,c){
  const rows=collectionImages(data,c), cover=rows[Math.min(c.cover,rows.length-1)], u=data.dictionaries[locale];
- return `<li class="project"><a href="${e(local(locale,c.route))}" aria-labelledby="card-${e(c.id)}"><figure>${picture(data,locale,cover,altFor(data,locale,c,c.cover))}<figcaption class="caption"><h3 id="card-${e(c.id)}">${e(l(c.title,locale))}</h3><p>${e(l(c.description,locale))}</p><span class="project-number">${rows.length} ${e(u.images)}</span></figcaption></figure></a></li>`;
+ const creditLabel=locale==='en'?'Photo credit':locale==='pt-BR'?'Crédito das fotos':locale==='fr'?'Crédit photo':'Crédito de las fotos';
+ const credit=c.credit?`<p class="meta project-credit">${e(creditLabel)}: ${e(c.credit)}</p>`:'';
+ return `<li class="project"><a href="${e(local(locale,c.route))}" aria-labelledby="card-${e(c.id)}"><figure>${picture(data,locale,cover,altFor(data,locale,c,c.cover))}<figcaption class="caption"><h3 id="card-${e(c.id)}">${e(l(c.title,locale))}</h3><p>${e(l(c.description,locale))}</p>${credit}<span class="project-number">${rows.length} ${e(u.images)}</span></figcaption></figure></a></li>`;
 }
 const colorClass=color=>'c-'+color.slice(1).toLowerCase();
 function atlasCards(data,locale){
@@ -131,7 +133,7 @@ const soundGroups={
 };
 function soundCards(data,locale){
  const u=data.dictionaries[locale];
- return `<div class="grid">${soundGroups[locale].map(([a,b])=>`<article class="sound-card"><p class="eyebrow">${e(a)}</p><h3>${e(b)}</h3><p class="meta">${e(u.soundComing)}</p></article>`).join('')}</div>`;
+ return `<div class="grid">${soundGroups[locale].map(([a,b])=>`<article class="sound-card"><span class="sound-play" aria-hidden="true">▶</span><p class="eyebrow">${e(a)}</p><h3>${e(b)}</h3><p class="meta">${e(u.soundComing)}</p></article>`).join('')}</div>`;
 }
 const routeCopy={
  en:[['Caeté-Açu','Recurring fieldwork','Water, vegetation, rocks, memory, conversations and repeated return to the studio.'],['Vale do Pati','Seven-day immersion','Walking, permanence, water, agriculture, housing, work, hospitality and soundscape.'],['Mucugê / Igatu','Historical field axis','Mining histories, stone construction, water, archives, memory and contemporary life.']],
@@ -140,9 +142,9 @@ const routeCopy={
  es:[['Caeté-Açu','Campo recurrente','Agua, vegetación, piedras, memoria, conversaciones y retorno continuado al taller.'],['Vale do Pati','Inmersión de siete días','Caminata, permanencia, agua, agricultura, vivienda, trabajo, hospitalidad y paisaje sonoro.'],['Mucugê / Igatu','Eje histórico de campo','Historias del garimpo, piedra construida, agua, archivos, memoria y vida contemporánea.']]
 };
 function routeCards(data,locale){
- const u=data.dictionaries[locale], images=[imageById(data,'water-05'),data.media.routes.pati,data.media.routes.igatu];
- const credits=['Renata / Axel · Caeté-Açu','Jardelsliumba, 2015 · CC BY-SA 3.0 · Wikimedia Commons','Adelano Lázaro, 2009 · public domain · Wikimedia Commons'];
- return `<div class="grid">${routeCopy[locale].map(([name,label,body],i)=>`<article class="route-card">${picture(data,locale,images[i],`${u.referenceImage}: ${name}.`)}<p class="eyebrow">${e(label)}</p><h3>${e(name)}</h3><p>${e(body)}</p><p class="meta">${e(credits[i])}</p></article>`).join('')}</div>`;
+ const u=data.dictionaries[locale], images=[data.media.routes.fumaca,data.media.routes.pati,data.media.routes.igatu];
+ const credits=['Adelano Lázaro Ferreira, 2009 · public domain · Wikimedia Commons','Jardelsliumba, 2015 · CC BY-SA 3.0 · Wikimedia Commons','Adelano Lázaro, 2009 · public domain · Wikimedia Commons'];
+ return `<div class="grid">${routeCopy[locale].map(([name,label,body],i)=>`<article class="route-card">${picture(data,locale,images[i],`${u.referenceImage}: ${name}.`,true)}<p class="eyebrow">${e(label)}</p><h3>${e(name)}</h3><p>${e(body)}</p><p class="meta">${e(credits[i])}</p></article>`).join('')}</div>`;
 }
 function proposedWorks(data,locale){
  const u=data.dictionaries[locale], word=locale==='en'?'Work':locale==='fr'?'Œuvre':'Obra';
@@ -162,13 +164,16 @@ function references(locale){
 function filmSection(data,locale){
  const p=data.project;
  const heading=locale==='en'?'Previous audiovisual work by the team':locale==='pt-BR'?'Trabalhos audiovisuais anteriores da equipe':locale==='fr'?'Travaux audiovisuels antérieurs de l’équipe':'Trabajos audiovisuales anteriores del equipo';
- const note=locale==='en'?'Small references from Renata and Axel’s previous work. They are not footage from Água de Dentro.':locale==='pt-BR'?'Pequenas referências de trabalhos anteriores de Renata e Axel. Não são imagens já filmadas de Água de Dentro.':locale==='fr'?'Petites références issues de travaux antérieurs de Renata et Axel. Il ne s’agit pas d’images déjà tournées pour Água de Dentro.':'Pequeñas referencias de trabajos anteriores de Renata y Axel. No son imágenes ya filmadas de Água de Dentro.';
+ const note=locale==='en'?'Small references from Renata and Axel’s previous work. They are not footage from Águas de Dentro.':locale==='pt-BR'?'Pequenas referências de trabalhos anteriores de Renata e Axel. Não são imagens já filmadas de Águas de Dentro.':locale==='fr'?'Petites références issues de travaux antérieurs de Renata et Axel. Il ne s’agit pas d’images déjà tournées pour Águas de Dentro.':'Pequeñas referencias de trabajos anteriores de Renata y Axel. No son imágenes ya filmadas de Águas de Dentro.';
+ const watch=locale==='en'?'Watch':locale==='pt-BR'?'Assistir':locale==='fr'?'Regarder':'Ver';
+ const close=locale==='en'?'Close video':locale==='pt-BR'?'Fechar vídeo':locale==='fr'?'Fermer la vidéo':'Cerrar video';
  const refs=[
   {creator:'Renata Alberigi',title:'ANALOGIAEU - Um Sonho de Renata Ribero',id:'Q1bbei1X3VA',poster:'/assets/images/video-references/renata-analogiaeu-1.webp',w:1280,h:720},
   {creator:'Renata Alberigi',title:'ANALOGIAEU- P.ARTE 5',id:'hS3SNQcha2o',poster:'/assets/images/video-references/renata-analogiaeu-2.webp',w:1280,h:720},
   {creator:'Axel Alberigi · A.X.L.',title:'Herança Verde Escuro',id:'yTs9CgrP-88',poster:'/assets/images/video-references/axel-heranca-verde-escuro.webp',w:640,h:360}
  ];
- return `<p class="film-lead">${e(l(p.sections.film.body,locale))}</p><div class="project-subheading film-reference-heading"><h3>${e(heading)}</h3><p class="project-note">${e(note)}</p></div><div class="grid film-references">${refs.map(v=>`<article class="film-reference"><a href="https://www.youtube.com/watch?v=${e(v.id)}" rel="noopener noreferrer"><img src="${e(v.poster)}" width="${v.w}" height="${v.h}" alt="${e(v.title)}" loading="lazy" decoding="async"><p class="eyebrow">${e(v.creator)}</p><h3>${e(v.title)}</h3><span class="control">YouTube ↗</span></a></article>`).join('')}</div>`;
+ const cards=refs.map(v=>`<article class="film-reference"><button type="button" class="film-video-trigger" data-video-id="${e(v.id)}" data-video-title="${e(v.title)}" aria-label="${e(watch+': '+v.title)}"><img src="${e(v.poster)}" width="${v.w}" height="${v.h}" alt="${e(v.title)}" loading="eager" decoding="async"><p class="eyebrow">${e(v.creator)}</p><h3>${e(v.title)}</h3><span class="control">${e(watch)} <span aria-hidden="true">▶</span></span></button></article>`).join('');
+ return `<p class="film-lead">${e(l(p.sections.film.body,locale))}</p><div class="project-subheading film-reference-heading"><h3>${e(heading)}</h3><p class="project-note">${e(note)}</p></div><div class="grid film-references">${cards}</div><dialog class="video-modal" data-video-modal aria-labelledby="video-modal-title"><div class="video-modal-shell"><div class="video-modal-head"><p id="video-modal-title" class="eyebrow" data-video-modal-title>${e(heading)}</p><button type="button" class="video-modal-close" data-video-close aria-label="${e(close)}">×</button></div><div class="video-modal-frame" data-video-frame></div></div></dialog>`;
 }
 function teamSection(data,locale){
  const p=data.project,u=data.dictionaries[locale];
@@ -193,7 +198,9 @@ function homeMain(data,locale){
 function galleryMain(data,locale,c){
  const u=data.dictionaries[locale], rows=collectionImages(data,c);
  const label=c.type==='archive'?u.archive:u.field;
- return `<article class="work-heading"><a class="control" href="${e(local(locale))}#${c.type==='archive'?'school':'research'}">← ${e(u.backHome)}</a><p class="eyebrow">${e(label)}</p><h1>${e(l(c.title,locale))}</h1><p class="intro">${e(l(c.description,locale))}</p><p class="meta">${rows.length} ${e(u.images)}</p></article><div class="brand-full-gallery">${rows.map((row,i)=>`<figure id="image-${i+1}">${picture(data,locale,row,altFor(data,locale,c,i),i===0)}<figcaption>${e(c.type==='archive'?u.archivePhoto:u.record)} ${String(i+1).padStart(2,'0')}</figcaption></figure>`).join('')}</div>`;
+ const creditLabel=locale==='en'?'Photo credit':locale==='pt-BR'?'Crédito das fotos':locale==='fr'?'Crédit photo':'Crédito de las fotos';
+ const credit=c.credit?`<p class="meta gallery-credit">${e(creditLabel)}: ${e(c.credit)}</p>`:'';
+ return `<article class="work-heading"><a class="control" href="${e(local(locale))}#${c.type==='archive'?'school':'research'}">← ${e(u.backHome)}</a><p class="eyebrow">${e(label)}</p><h1>${e(l(c.title,locale))}</h1><p class="intro">${e(l(c.description,locale))}</p><p class="meta">${rows.length} ${e(u.images)}</p>${credit}</article><div class="brand-full-gallery">${rows.map((row,i)=>`<figure id="image-${i+1}">${picture(data,locale,row,altFor(data,locale,c,i),i===0)}<figcaption>${e(c.type==='archive'?u.archivePhoto:u.record)} ${String(i+1).padStart(2,'0')}${c.credit?` · ${e(c.credit)}`:''}</figcaption></figure>`).join('')}</div>`;
 }
 function homeMarkdown(data,locale){
  const p=data.project,u=data.dictionaries[locale];
@@ -240,12 +247,12 @@ async function build(){
  await write('CNAME',data.site.customDomain+'\n');
  await write('.nojekyll','');
  await write('robots.txt','User-agent: *\nAllow: /\n');
- const llms=['# Água de Dentro','',l(data.project.intro,'es'),'','## Languages',...LOCALES.map(loc=>`- ${data.dictionaries[loc].localeName}: ${absolute(data.site,loc)}`),'','## Research galleries',...data.collections.map(c=>`- ${l(c.title,'en')}: ${absolute(data.site,'en',c.route)}`)];
+ const llms=['# Águas de Dentro','',l(data.project.intro,'es'),'','## Languages',...LOCALES.map(loc=>`- ${data.dictionaries[loc].localeName}: ${absolute(data.site,loc)}`),'','## Research galleries',...data.collections.map(c=>`- ${l(c.title,'en')}: ${absolute(data.site,'en',c.route)}`)];
  await write('llms.txt',llms.join('\n')+'\n');
  const urls=[]; for(const loc of LOCALES){urls.push(absolute(data.site,loc)); for(const c of data.collections)urls.push(absolute(data.site,loc,c.route));}
  await write('sitemap.xml','<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'+urls.map(url=>`  <url><loc>${e(url)}</loc></url>`).join('\n')+'\n</urlset>\n');
- const notFound=`<section><h1>Página no encontrada</h1><p>Esta ruta no forma parte de Água de Dentro.</p><a class="control" href="/">Volver al proyecto</a></section>`;
- await write('404.html',document(data,'es','404.html','Página no encontrada — Água de Dentro','Página no encontrada',notFound));
+ const notFound=`<section><h1>Página no encontrada</h1><p>Esta ruta no forma parte de Águas de Dentro.</p><a class="control" href="/">Volver al proyecto</a></section>`;
+ await write('404.html',document(data,'es','404.html','Página no encontrada — Águas de Dentro','Página no encontrada',notFound));
  console.log('BUILD_OK',JSON.stringify({locales:LOCALES,collections:data.collections.length,fieldImages:Object.values(data.media.field).flat().length,archiveImages:Object.values(data.media.exhibitions).flat().length,atlas:data.atlas.length}));
 }
 

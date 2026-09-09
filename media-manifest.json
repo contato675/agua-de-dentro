@@ -21,13 +21,13 @@
       },
       {
         "path": "images/field/water/04.webp",
-        "width": 1280,
+        "width": 960,
         "height": 1280,
         "id": "water-04"
       },
       {
         "path": "images/field/water/05.webp",
-        "width": 1280,
+        "width": 960,
         "height": 1280,
         "id": "water-05"
       },
@@ -39,31 +39,31 @@
       },
       {
         "path": "images/field/water/07.webp",
-        "width": 1280,
-        "height": 1280,
+        "width": 1600,
+        "height": 1200,
         "id": "water-07"
       },
       {
         "path": "images/field/water/08.webp",
-        "width": 960,
+        "width": 1280,
         "height": 1280,
         "id": "water-08"
       },
       {
         "path": "images/field/water/09.webp",
-        "width": 1024,
+        "width": 1280,
         "height": 1280,
         "id": "water-09"
       },
       {
         "path": "images/field/water/10.webp",
-        "width": 1024,
+        "width": 1280,
         "height": 1280,
         "id": "water-10"
       },
       {
         "path": "images/field/water/11.webp",
-        "width": 960,
+        "width": 1280,
         "height": 1280,
         "id": "water-11"
       },
@@ -72,6 +72,114 @@
         "width": 960,
         "height": 1280,
         "id": "water-12"
+      },
+      {
+        "path": "images/field/water/13.webp",
+        "width": 960,
+        "height": 1280,
+        "id": "water-13"
+      },
+      {
+        "path": "images/field/water/14.webp",
+        "width": 1280,
+        "height": 1280,
+        "id": "water-14"
+      },
+      {
+        "path": "images/field/water/15.webp",
+        "width": 960,
+        "height": 1280,
+        "id": "water-15"
+      },
+      {
+        "path": "images/field/water/16.webp",
+        "width": 960,
+        "height": 1280,
+        "id": "water-16"
+      },
+      {
+        "path": "images/field/water/17.webp",
+        "width": 960,
+        "height": 1280,
+        "id": "water-17"
+      },
+      {
+        "path": "images/field/water/18.webp",
+        "width": 960,
+        "height": 1280,
+        "id": "water-18"
+      },
+      {
+        "path": "images/field/water/19.webp",
+        "width": 960,
+        "height": 1280,
+        "id": "water-19"
+      },
+      {
+        "path": "images/field/water/20.webp",
+        "width": 960,
+        "height": 1280,
+        "id": "water-20"
+      },
+      {
+        "path": "images/field/water/21.webp",
+        "width": 1024,
+        "height": 1280,
+        "id": "water-21"
+      },
+      {
+        "path": "images/field/water/22.webp",
+        "width": 1024,
+        "height": 1280,
+        "id": "water-22"
+      },
+      {
+        "path": "images/field/water/23.webp",
+        "width": 960,
+        "height": 1280,
+        "id": "water-23"
+      },
+      {
+        "path": "images/field/water/24.webp",
+        "width": 960,
+        "height": 1280,
+        "id": "water-24"
+      },
+      {
+        "path": "images/field/water/25.webp",
+        "width": 960,
+        "height": 1280,
+        "id": "water-25"
+      },
+      {
+        "path": "images/field/water/26.webp",
+        "width": 960,
+        "height": 1280,
+        "id": "water-26"
+      },
+      {
+        "path": "images/field/water/27.webp",
+        "width": 960,
+        "height": 1280,
+        "id": "water-27"
+      },
+      {
+        "path": "images/field/water/28.webp",
+        "width": 960,
+        "height": 1280,
+        "id": "water-28"
+      },
+      {
+        "path": "images/field/water/29.webp",
+        "width": 1200,
+        "height": 1600,
+        "id": "water-29"
+      },
+      {
+        "path": "images/field/water/30.webp",
+        "width": 960,
+        "height": 1280,
+        "id": "water-30"
       }
     ],
     "stone": [
@@ -119,7 +227,7 @@
       },
       {
         "path": "images/field/stone/08.webp",
-        "width": 1024,
+        "width": 960,
         "height": 1280,
         "id": "stone-08"
       },
@@ -137,8 +245,8 @@
       },
       {
         "path": "images/field/stone/11.webp",
-        "width": 1200,
-        "height": 1600,
+        "width": 960,
+        "height": 1280,
         "id": "stone-11"
       },
       {
@@ -146,6 +254,108 @@
         "width": 960,
         "height": 1280,
         "id": "stone-12"
+      },
+      {
+        "path": "images/field/stone/13.webp",
+        "width": 960,
+        "height": 1280,
+        "id": "stone-13"
+      },
+      {
+        "path": "images/field/stone/14.webp",
+        "width": 960,
+        "height": 1280,
+        "id": "stone-14"
+      },
+      {
+        "path": "images/field/stone/15.webp",
+        "width": 960,
+        "height": 1280,
+        "id": "stone-15"
+      },
+      {
+        "path": "images/field/stone/16.webp",
+        "width": 1280,
+        "height": 960,
+        "id": "stone-16"
+      },
+      {
+        "path": "images/field/stone/17.webp",
+        "width": 960,
+        "height": 1280,
+        "id": "stone-17"
+      },
+      {
+        "path": "images/field/stone/18.webp",
+        "width": 960,
+        "height": 1280,
+        "id": "stone-18"
+      },
+      {
+        "path": "images/field/stone/19.webp",
+        "width": 960,
+        "height": 1280,
+        "id": "stone-19"
+      },
+      {
+        "path": "images/field/stone/20.webp",
+        "width": 960,
+        "height": 1280,
+        "id": "stone-20"
+      },
+      {
+        "path": "images/field/stone/21.webp",
+        "width": 1024,
+        "height": 1280,
+        "id": "stone-21"
+      },
+      {
+        "path": "images/field/stone/22.webp",
+        "width": 960,
+        "height": 1280,
+        "id": "stone-22"
+      },
+      {
+        "path": "images/field/stone/23.webp",
+        "width": 960,
+        "height": 1280,
+        "id": "stone-23"
+      },
+      {
+        "path": "images/field/stone/24.webp",
+        "width": 960,
+        "height": 1280,
+        "id": "stone-24"
+      },
+      {
+        "path": "images/field/stone/25.webp",
+        "width": 1200,
+        "height": 1600,
+        "id": "stone-25"
+      },
+      {
+        "path": "images/field/stone/26.webp",
+        "width": 960,
+        "height": 1280,
+        "id": "stone-26"
+      },
+      {
+        "path": "images/field/stone/27.webp",
+        "width": 960,
+        "height": 1280,
+        "id": "stone-27"
+      },
+      {
+        "path": "images/field/stone/28.webp",
+        "width": 960,
+        "height": 1280,
+        "id": "stone-28"
+      },
+      {
+        "path": "images/field/stone/29.webp",
+        "width": 960,
+        "height": 1280,
+        "id": "stone-29"
       }
     ],
     "vegetation": [
@@ -217,7 +427,7 @@
       },
       {
         "path": "images/field/vegetation/12.webp",
-        "width": 1280,
+        "width": 960,
         "height": 1280,
         "id": "vegetation-12"
       },
@@ -232,6 +442,36 @@
         "width": 960,
         "height": 1280,
         "id": "vegetation-14"
+      },
+      {
+        "path": "images/field/vegetation/15.webp",
+        "width": 960,
+        "height": 1280,
+        "id": "vegetation-15"
+      },
+      {
+        "path": "images/field/vegetation/16.webp",
+        "width": 960,
+        "height": 1280,
+        "id": "vegetation-16"
+      },
+      {
+        "path": "images/field/vegetation/17.webp",
+        "width": 1280,
+        "height": 1280,
+        "id": "vegetation-17"
+      },
+      {
+        "path": "images/field/vegetation/18.webp",
+        "width": 960,
+        "height": 1280,
+        "id": "vegetation-18"
+      },
+      {
+        "path": "images/field/vegetation/19.webp",
+        "width": 960,
+        "height": 1280,
+        "id": "vegetation-19"
       }
     ]
   },
@@ -245,36 +485,41 @@
       "path": "images/routes/igatu.webp",
       "width": 2000,
       "height": 1500
+    },
+    "fumaca": {
+      "path": "images/routes/fumaca.webp",
+      "width": 1200,
+      "height": 1600
     }
   },
   "atlas": [
     [
       "stone",
-      "stone-04"
+      "stone-08"
     ],
     [
       "flower",
-      "vegetation-11"
+      "vegetation-16"
     ],
     [
       "amber-water",
-      "water-05"
+      "water-10"
     ],
     [
       "reflection",
-      "water-07"
+      "water-14"
     ],
     [
       "blue-cactus",
-      "vegetation-09"
+      "vegetation-13"
     ],
     [
       "lichen",
-      "stone-06"
+      "stone-19"
     ],
     [
       "yellow-flower",
-      "vegetation-08"
+      "vegetation-11"
     ],
     [
       "leaf-rock",

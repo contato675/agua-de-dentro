@@ -1,4 +1,4 @@
-# Água de Dentro
+# Águas de Dentro
 
 Project website for Renata Alberigi's artistic research in Chapada Diamantina, Bahia, Brazil.
 
@@ -6,11 +6,11 @@ The visual system is derived from the public Renata Alberigi portfolio template:
 
 ## Languages
 
-Spanish is the canonical entry. Full equivalents are generated for Portuguese (Brazil), French and English. UI dictionaries and editorial fields must keep exact locale parity.
+The public portal is available in Spanish, Portuguese (Brazil), French and English through equivalent localized routes. UI dictionaries and editorial fields keep exact locale parity.
 
 ## Public archive
 
-The source includes optimized WebP derivatives only. Current archive: 38 Caeté-Açu field photographs, 54 historical educational/exhibition photographs, three complete field→sketchbook→painting sequences, route references and eight Atlas of Colour entries.
+The source includes optimized WebP derivatives only. Current archive: 78 Caeté-Açu field photographs, 54 historical educational/exhibition photographs, three complete field→sketchbook→painting sequences, route references and eight Atlas of Colour entries.
 
 Original photographs, private documents, GPS and EXIF metadata are not stored in this repository.
 ## Development

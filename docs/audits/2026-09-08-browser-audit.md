@@ -1,6 +1,6 @@
-# Água de Dentro · browser and publication audit
+# Águas de Dentro · browser and publication audit
 
-Date: 2026-09-08
+Date: 2026-09-09
 
 ## Build
 
@@ -8,7 +8,7 @@ Date: 2026-09-08
 - Locales: ES canonical at `/`; PT-BR `/pt-br/`; FR `/fr/`; EN `/en/`.
 - Static HTML pages: 25.
 - Complete localized galleries: 20 routes (5 collections × 4 languages).
-- Field archive: 38 Caeté-Açu photographs.
+- Field archive: 78 Caeté-Açu photographs (30 water, 29 stone/path, 19 vegetation).
 - Historical educational/exhibition archive: 54 photographs.
 - Atlas of Colour: 8 entries.
 - Existing field → sketchbook → painting sequences: Ponte Nova, Poço da Maternidade and Áureo.
@@ -31,15 +31,17 @@ Chrome 152 on Windows; widths 320, 390, 480, 768, 1024, 1440 and 1920 px in ES, 
 - locale switch preserves reading position on equivalent home pages;
 - MAV archive loads all 13 photographs on mobile and desktop;
 - EducaMais archive loads all 41 photographs on mobile and desktop.
+- audiovisual references open inside an in-site modal using YouTube no-cookie embeds;
+- Sound Atlas cards expose a non-interactive play affordance as a delivery preview.
 
 ## Media safety
 
-103 public WebP derivatives were inspected with Pillow after conversion.
+149 public WebP derivatives were inspected with Pillow after conversion.
 
 - EXIF findings: 0;
 - GPS findings: 0;
 - XMP findings: 0;
-- public image payload: approximately 19.32 MiB.
+- public image payload: approximately 30.16 MiB.
 
 Original JPEGs, source filenames, private documents and source metadata are not part of the public repository.
 

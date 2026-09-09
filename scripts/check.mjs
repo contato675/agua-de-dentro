@@ -37,7 +37,7 @@ for(const [f,body] of Object.entries(text)){
   try{await stat(target);}catch{if(!clean.endsWith('.html'))errors.push(`Missing asset ${clean} from ${f}`);}
  }
 }
-const counts={'research/water/':12,'research/stones/':12,'research/vegetation/':14,'archive/mav-2018/':13,'archive/educamais-2017/':41};
+const counts={'research/water/':30,'research/stones/':29,'research/vegetation/':19,'archive/mav-2018/':13,'archive/educamais-2017/':41};
 for(const prefix of prefixes)for(const [route,count] of Object.entries(counts)){
  const body=text[prefix+route+'index.html']||'';
  const actual=(body.match(/<figure id="image-/g)||[]).length;
@@ -54,4 +54,4 @@ if(!text['en/index.html']?.includes('5 years'))errors.push('English 5-year wordi
 if(!text['pt-br/index.html']?.includes('5 anos'))errors.push('Portuguese 5-year wording missing.');
 if(!text['fr/index.html']?.includes('5 ans'))errors.push('French 5-year wording missing.');
 if(!text['index.html']?.includes('5 años'))errors.push('Spanish 5-year wording missing.');
-if(errors.length){console.error('CHECK_FAIL\n'+errors.join('\n'));process.exitCode=1;}else console.log('CHECK_OK',JSON.stringify({html:html.length,galleries:20,atlasEntries:8,fieldImages:38,archiveImages:54}));
+if(errors.length){console.error('CHECK_FAIL\n'+errors.join('\n'));process.exitCode=1;}else console.log('CHECK_OK',JSON.stringify({html:html.length,galleries:20,atlasEntries:8,fieldImages:78,archiveImages:54}));

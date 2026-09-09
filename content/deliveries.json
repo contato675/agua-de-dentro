@@ -1,7 +1,72 @@
 [
-  {"label":{"en":"Pictorial creation","pt-BR":"Criação pictórica","fr":"Création picturale","es":"Creación pictórica"},"body":{"en":"8 new paintings measuring 100 × 80 cm, sketchbook and process documentation.","pt-BR":"8 novas pinturas de 100 × 80 cm, sketchbook e documentação de processo.","fr":"8 nouvelles peintures de 100 × 80 cm, carnet de croquis et documentation du processus.","es":"8 nuevas pinturas de 100 × 80 cm, cuaderno de bocetos y documentación del proceso."}},
-  {"label":{"en":"Field research","pt-BR":"Pesquisa de campo","fr":"Recherche de terrain","es":"Investigación de campo"},"body":{"en":"Caeté-Açu, Vale do Pati and Mucugê/Igatu, with photography, sound, conversations and local guides.","pt-BR":"Caeté-Açu, Vale do Pati e Mucugê/Igatu, com fotografia, som, conversas e guias locais.","fr":"Caeté-Açu, Vale do Pati et Mucugê/Igatu, avec photographie, son, conversations et guides locaux.","es":"Caeté-Açu, Vale do Pati y Mucugê/Igatu, con fotografía, sonido, conversaciones y guías locales."}},
-  {"label":{"en":"Mini-documentary","pt-BR":"Minidocumentário","fr":"Mini-documentaire","es":"Minidocumental"},"body":{"en":"Film of up to 15 minutes about the research experience and painting process.","pt-BR":"Filme de até 15 minutos sobre a experiência da pesquisa e o processo de pintura.","fr":"Film de 15 minutes maximum sur l’expérience de la recherche et le processus de peinture.","es":"Película de hasta 15 minutos sobre la experiencia de la investigación y el proceso de pintura."}},
-  {"label":{"en":"Online website","pt-BR":"Site online","fr":"Site en ligne","es":"Sitio online"},"body":{"en":"English canonical entry plus Portuguese, French and Spanish, planned to remain online for 5 years, with galleries and access categories including the Atlas of Colour and Sound Atlas.","pt-BR":"Entrada canônica em inglês mais português, francês e espanhol, com permanência prevista por 5 anos, galerias e categorias de acesso como Atlas de Cor e Atlas Sonoro.","fr":"Entrée canonique en anglais, avec versions portugaise, française et espagnole, prévue en ligne pendant 5 ans, avec galeries et catégories d’accès telles que l’Atlas des couleurs et l’Atlas sonore.","es":"Entrada canónica en inglés más portugués, francés y español, prevista en línea durante 5 años, con galerías y categorías de acceso como Atlas de Color y Atlas Sonoro."}},
-  {"label":{"en":"Municipal School","pt-BR":"Escola Municipal","fr":"École municipale","es":"Escuela municipal"},"body":{"en":"Presentation of the paintings and film, a conversation with the team and about 400 booklets for colouring and creating.","pt-BR":"Apresentação das pinturas e do filme, conversa com a equipe e cerca de 400 cadernos de colorir e criar.","fr":"Présentation des peintures et du film, échange avec l’équipe et environ 400 cahiers à colorier et à créer.","es":"Presentación de las pinturas y la película, conversación con el equipo y cerca de 400 cuadernos para colorear y crear."}}
+  {
+    "label": {
+      "en": "Pictorial creation",
+      "pt-BR": "Criação pictórica",
+      "fr": "Création picturale",
+      "es": "Creación pictórica"
+    },
+    "body": {
+      "en": "8 new paintings measuring 100 × 80 cm, sketchbook and process documentation.",
+      "pt-BR": "8 novas pinturas de 100 × 80 cm, sketchbook e documentação de processo.",
+      "fr": "8 nouvelles peintures de 100 × 80 cm, carnet de croquis et documentation du processus.",
+      "es": "8 nuevas pinturas de 100 × 80 cm, cuaderno de bocetos y documentación del proceso."
+    }
+  },
+  {
+    "label": {
+      "en": "Field research",
+      "pt-BR": "Pesquisa de campo",
+      "fr": "Recherche de terrain",
+      "es": "Investigación de campo"
+    },
+    "body": {
+      "en": "Caeté-Açu, Vale do Pati and Mucugê/Igatu, with photography, sound, conversations and local guides.",
+      "pt-BR": "Caeté-Açu, Vale do Pati e Mucugê/Igatu, com fotografia, som, conversas e guias locais.",
+      "fr": "Caeté-Açu, Vale do Pati et Mucugê/Igatu, avec photographie, son, conversations et guides locaux.",
+      "es": "Caeté-Açu, Vale do Pati y Mucugê/Igatu, con fotografía, sonido, conversaciones y guías locales."
+    }
+  },
+  {
+    "label": {
+      "en": "Mini-documentary",
+      "pt-BR": "Minidocumentário",
+      "fr": "Mini-documentaire",
+      "es": "Minidocumental"
+    },
+    "body": {
+      "en": "Film of up to 15 minutes about the research experience and painting process.",
+      "pt-BR": "Filme de até 15 minutos sobre a experiência da pesquisa e o processo de pintura.",
+      "fr": "Film de 15 minutes maximum sur l’expérience de la recherche et le processus de peinture.",
+      "es": "Película de hasta 15 minutos sobre la experiencia de la investigación y el proceso de pintura."
+    }
+  },
+  {
+    "label": {
+      "en": "Online website",
+      "pt-BR": "Site online",
+      "fr": "Site en ligne",
+      "es": "Sitio online"
+    },
+    "body": {
+      "en": "Public portal available in English, Portuguese, French and Spanish, planned to remain online for 5 years, with galleries and access categories including the Atlas of Colour and Sound Atlas.",
+      "pt-BR": "Portal público com acesso em inglês, português, francês e espanhol, com permanência prevista por 5 anos, galerias e categorias de acesso como Atlas de Cor e Atlas Sonoro.",
+      "fr": "Portail public accessible en anglais, portugais, français et espagnol, prévu en ligne pendant 5 ans, avec galeries et catégories d’accès telles que l’Atlas des couleurs et l’Atlas sonore.",
+      "es": "Portal público disponible en inglés, portugués, francés y español, previsto en línea durante 5 años, con galerías y categorías de acceso como Atlas de Color y Atlas Sonoro."
+    }
+  },
+  {
+    "label": {
+      "en": "Municipal School",
+      "pt-BR": "Escola Municipal",
+      "fr": "École municipale",
+      "es": "Escuela municipal"
+    },
+    "body": {
+      "en": "Presentation of the paintings and film, a conversation with the team and about 400 booklets for colouring and creating.",
+      "pt-BR": "Apresentação das pinturas e do filme, conversa com a equipe e cerca de 400 cadernos de colorir e criar.",
+      "fr": "Présentation des peintures et du film, échange avec l’équipe et environ 400 cahiers à colorier et à créer.",
+      "es": "Presentación de las pinturas y la película, conversación con el equipo y cerca de 400 cuadernos para colorear y crear."
+    }
+  }
 ]
